@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>محمد العلي | Portfolio</title>
+  <meta name="description" content="الموقع الشخصي لمحمد العلي - أمن معلومات وأمن سيبراني وشبكات وتطوير." />
+  <style>
+    :root { --bg:#0b1220; --card:#101a2f; --text:#e8eefc; --muted:#a8b3cf; --accent:#6aa7ff; }
+    *{box-sizing:border-box} body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial; background:var(--bg); color:var(--text);}
+    a{color:var(--accent); text-decoration:none} a:hover{text-decoration:underline}
+    .wrap{max-width:980px;margin:0 auto;padding:28px 18px 60px}
+    header{display:flex;gap:18px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin-top:8px}
+    .brand{display:flex;flex-direction:column;gap:6px}
+    h1{font-size:34px;margin:0}
+    .tag{color:var(--muted);font-size:14px}
+    .cta{display:flex;gap:10px;flex-wrap:wrap}
+    .btn{background:var(--card);border:1px solid rgba(255,255,255,.08);padding:10px 14px;border-radius:12px;display:inline-block}
+    .btn.primary{background:linear-gradient(135deg, rgba(106,167,255,.35), rgba(16,26,47,1)); border-color:rgba(106,167,255,.35)}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:14px;margin-top:18px}
+    .card{grid-column:span 12;background:var(--card);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:16px}
+    @media(min-width:820px){ .card.half{grid-column:span 6} .card.third{grid-column:span 4} }
+    h2{margin:0 0 10px;font-size:18px}
+    p{margin:0;color:var(--muted);line-height:1.8}
+    .chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+    .chip{padding:6px 10px;border-radius:999px;border:1px solid rgba(255,255,255,.10);color:var(--text);font-size:13px;background:rgba(255,255,255,.03)}
+    .proj{display:flex;flex-direction:column;gap:8px}
+    .proj .meta{display:flex;gap:10px;flex-wrap:wrap;color:var(--muted);font-size:13px}
+    footer{margin-top:22px;color:var(--muted);font-size:13px;text-align:center}
+    .small{font-size:12px;color:var(--muted)}
+    .row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+    .sep{opacity:.35}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <h1>محمد العلي</h1>
+        <div class="tag">أمن معلومات • أمن سيبراني • أمن شبكات • تطوير وبرمجة • تصميم</div>
+      </div>
+      <div class="cta">
+        <a class="btn primary" href="#projects">مشاريعي</a>
+        <a class="btn" href="#contact">تواصل</a>
+        <!-- ضع رابط السيرة الذاتية لاحقاً -->
+        <a class="btn" href="#" onclick="alert('أضف رابط CV لاحقاً'); return false;">تحميل CV</a>
+      </div>
+    </header>
+
+    <section class="grid">
+      <div class="card half">
+        <h2>نبذة عني</h2>
+        <p>
+          أنا خريج أمن معلومات، لدي خبرة عامة في البرمجة والتصميم وأمن الشبكات والأمن السيبراني.
+          أركز على بناء حلول عملية، وتأمين الأنظمة، وتحسين جودة وأمان التطبيقات.
+        </p>
+        <div class="chips">
+          <span class="chip">Pentesting</span>
+          <span class="chip">Network Security</span>
+          <span class="chip">Web Dev</span>
+          <span class="chip">UI/UX</span>
+          <span class="chip">Linux</span>
+        </div>
+      </div>
+
+      <div class="card half">
+        <h2>ماذا أقدّم</h2>
+        <p>• فحص أمني أساسي للتطبيقات والمواقع، وكتابة تقارير واضحة.</p>
+        <p>• إعداد وتأمين الشبكات (أساسيات/متوسط) ومراقبة المشاكل.</p>
+        <p>• تطوير مواقع بسيطة/صفحات تعريفية وتحسين تجربة المستخدم.</p>
+        <div class="chips">
+          <span class="chip">Security Reports</span>
+          <span class="chip">Hardening</span>
+          <span class="chip">Website Builds</span>
+        </div>
+      </div>
+
+      <div class="card" id="projects">
+        <h2>المشاريع</h2>
+        <p class="small">حاليًا يمكنك وضع مشاريع كعينات. لاحقًا عندما ترفعها على GitHub أضف الروابط هنا.</p>
+        <div style="height:10px"></div>
+
+        <!-- Project 1 -->
+        <div class="proj">
+          <strong>مشروع 1 (Placeholder)</strong>
+          <div class="meta">
+            <span>وصف سريع للمشروع…</span><span class="sep">•</span>
+            <span>التقنيات: Python / Bash / ...</span>
+          </div>
+          <div class="row">
+            <a class="btn" href="#" onclick="alert('ضع رابط GitHub هنا'); return false;">GitHub</a>
+            <a class="btn" href="#" onclick="alert('ضع رابط Demo هنا'); return false;">Demo</a>
+          </div>
+        </div>
+
+        <hr style="border:none;border-top:1px solid rgba(255,255,255,.08);margin:14px 0">
+
+        <!-- Project 2 -->
+        <div class="proj">
+          <strong>مشروع 2 (Placeholder)</strong>
+          <div class="meta">
+            <span>وصف سريع للمشروع…</span><span class="sep">•</span>
+            <span>التقنيات: HTML / CSS / JS / ...</span>
+          </div>
+          <div class="row">
+            <a class="btn" href="#" onclick="alert('ضع رابط GitHub هنا'); return false;">GitHub</a>
+            <a class="btn" href="#" onclick="alert('ضع رابط Demo هنا'); return false;">Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card third">
+        <h2>مجالات مهتم فيها</h2>
+        <div class="chips">
+          <span class="chip">SOC</span>
+          <span class="chip">Web Security</span>
+          <span class="chip">Blue Team</span>
+          <span class="chip">DevSecOps</span>
+        </div>
+      </div>
+
+      <div class="card third">
+        <h2>روابط</h2>
+        <p><a href="https://github.com/muhammetalali199" target="_blank" rel="noreferrer">GitHub</a></p>
+        <p><a href="#" onclick="alert('أضف LinkedIn لاحقاً'); return false;">LinkedIn</a></p>
+        <p><a href="#" onclick="alert('أضف TryHackMe/HTB لاحقاً'); return false;">TryHackMe / HTB</a></p>
+      </div>
+
+      <div class="card third" id="contact">
+        <h2>تواصل معي</h2>
+        <p>إيميل: <a href="mailto:you@example.com">you@example.com</a></p>
+        <p class="small">بدّل الإيميل لإيميلك الحقيقي، ويمكن إضافة Telegram.</p>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="y"></span> محمد العلي — Built with GitHub Pages
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
